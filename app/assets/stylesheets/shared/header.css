@@ -74,12 +74,7 @@
 .category-list {
   text-decoration: none;
   margin-right: 3vw;
-  color: #333333;
-  list-style: none;
-}
-
-.brand-list {
-  text-decoration: none;
+  margin-left: 2vw;
   color: #333333;
   list-style: none;
 }

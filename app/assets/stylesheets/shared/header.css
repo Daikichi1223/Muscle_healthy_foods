@@ -63,7 +63,7 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 1vh 0;
-  background-color: darkgray;
+  background-color: #272727;
 }
 
 .lists-left {
@@ -75,7 +75,7 @@
   text-decoration: none;
   margin-right: 3vw;
   margin-left: 2vw;
-  color: #333333;
+  color: white;
   list-style: none;
 }
 
@@ -88,14 +88,14 @@
   text-decoration: none;
   line-height: 32px;
   margin-right: 2vw;
-  color: #333333;
+  color: white;
 }
 
 .sign-up {
   text-decoration: none;
   line-height: 32px;
   margin-right: 3vw;
-  color: #333333;
+  color: white;
 }
 
 .lists-right {
@@ -107,12 +107,12 @@
 .user-nickname {
   text-decoration: none;
   margin-right: 3vw;
-  color: #333333;
+  color: white;
   font-weight: bold;
 }
 
 
 .logout {
   text-decoration: none;
-  color: #333333;
+  color: white;
 }

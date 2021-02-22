@@ -104,7 +104,7 @@
   align-items: flex-end;
 }
 
-.user-nickname {
+.user-nickname, .shop-name {
   text-decoration: none;
   margin-right: 3vw;
   color: white;

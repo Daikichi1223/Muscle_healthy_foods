@@ -28,7 +28,7 @@ describe User do
         expect(@user.errors.full_messages).to include("Eメールを入力してください")
       end
       it 'emailに@が存在しない場合は登録できない' do
-        @user. email = "test.com"
+        @user.email = "test.com"
         @user.valid?
         expect(@user.errors.full_messages).to include("Eメールは不正な値です")
       end

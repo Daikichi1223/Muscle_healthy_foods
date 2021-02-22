@@ -7,6 +7,7 @@
   justify-content: center;
 }
 
+/* form-wrapは商品購入画面でも使用しています */
 .form-wrap {
   width: 50%;
   background-color: white;
@@ -143,6 +144,12 @@
 .form-bottom-text>span {
   color: #0099e8;
   cursor: pointer;
+}
+
+.info-input-haedline {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 15vw;
 }
 
 .register-btn {

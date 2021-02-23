@@ -4,6 +4,15 @@ class MealsController < ApplicationController
   end
 
   def new
-    @meal = Meal.all
+    @meal = Meal.new
+  end
+
+  def create
+    @meal = Meal.new(meal_params)
+  end
+
+  private
+  def meal_params
+    params.require(:meal).permit(:name, :explanation, :category_id :price, :image).merge(shop_id: current_shop.id)
   end
 end

@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   }
   root to: "meals#index"
   resources :users, only: [:index, :destroy]
+  resources :meals, only: [:new, :create]
 end

@@ -5,7 +5,7 @@
 
   <div class="meals-sell-main">
     <h2 class="meals-sell-title">料理の情報を入力</h2>
-    <%= form_with local: true do |f| %>
+    <%= form_with(model: @meal, local: true) do |f| %>
 
     <%# エラー発生時にメッセージが表示される %>
     <%#= render 'shared/error_messages', model: f.object %>
@@ -50,7 +50,7 @@
           ジャンル
           <span class="indispensable">必須</span>
         </div>
-        <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box", id:"meal-category"}) %>
+        <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box", id:"meal-genre"}) %>
         <div class="weight-bold-text">
           栄養成分表示
           <span class="indispensable">必須</span>

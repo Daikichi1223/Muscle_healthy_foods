@@ -9,7 +9,8 @@ Rails.application.routes.draw do
     passwords:     'users/passwords',
     registrations: 'users/registrations'
   }
+
   root to: "meals#index"
   resources :users, only: [:index, :destroy]
-  resources :meals, only: [:new, :create]
+  resources :meals, only: [:index, :new, :create]
 end

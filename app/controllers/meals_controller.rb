@@ -8,7 +8,7 @@ class MealsController < ApplicationController
   end
 
   def create
-    @meal = Meal.new(meal_params)
+    @meal = Meal.create(meal_params)
     if @meal.save
       redirect_to root_path
     else

@@ -9,10 +9,15 @@ class MealsController < ApplicationController
 
   def create
     @meal = Meal.new(meal_params)
+    if @meal.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
   private
   def meal_params
-    params.require(:meal).permit(:name, :explanation, :category_id :price, :image).merge(shop_id: current_shop.id)
+    params.require(:meal).permit(:name, :explanation, :genre_id, :protein, :fat, :carbo, :price, :image).merge(shop_id: current_shop.id)
   end
 end

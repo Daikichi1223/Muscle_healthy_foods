@@ -50,7 +50,7 @@
           ジャンル
           <span class="indispensable">必須</span>
         </div>
-        <%= f.collection_select(:hoge, [], :hoge, :hoge, {}, {class:"select-box", id:"meal-category"}) %>
+        <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box", id:"meal-category"}) %>
         <div class="weight-bold-text">
           栄養成分表示
           <span class="indispensable">必須</span>

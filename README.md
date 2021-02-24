@@ -36,7 +36,7 @@
 | ----------- | ---------- | ------------------------------ |
 | name        | string     | null: false                    |
 | explanation | text       | null: false                    |
-| category    | integer    | null: false                    |
+| genre       | integer    | null: false                    |
 | price       | integer    | null: false                    |
 | shop        | references | null: false, foreign_key: true |
 

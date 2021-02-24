@@ -21,7 +21,7 @@
         <p>
           クリックしてファイルをアップロード
         </p>
-        <%= f.file_field :hoge, id:"meal-image" %>
+        <%= f.file_field :image, id:"meal-image" %>
       </div>
     </div>
     <%# /料理画像 %>
@@ -31,13 +31,13 @@
         料理名
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :hoge, class:"meals-text", id:"meal-name", placeholder:"料理名（40文字まで)", maxlength:"40" %>
+      <%= f.text_area :name, class:"meals-text", id:"meal-name", placeholder:"料理名（40文字まで)", maxlength:"40" %>
       <div class="meals-explain">
         <div class="weight-bold-text">
           料理の説明
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :hoge, class:"meals-text", id:"meal-info", placeholder:"料理の説明（1,000文字まで）" ,rows:"7" ,maxlength:"1000" %>
+        <%= f.text_area :explanation, class:"meals-text", id:"meal-info", placeholder:"料理の説明（1,000文字まで）" ,rows:"7" ,maxlength:"1000" %>
       </div>
     </div>
     <%# /料理名と説明 %>
@@ -55,9 +55,9 @@
           栄養成分表示
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :hoge, class:"meals-nutrition", id:"meal-nutrition", placeholder:"タンパク質（g)" %>
-        <%= f.text_area :hoge, class:"meals-nutrition", id:"meal-nutrition", placeholder:"脂質（g)" %>
-        <%= f.text_area :hoge, class:"meals-nutrition", id:"meal-nutrition", placeholder:"炭水化物（g)" %>
+        <%= f.text_area :protein, class:"meals-nutrition", id:"meal-nutrition", placeholder:"タンパク質（g)" %>
+        <%= f.text_area :fat, class:"meals-nutrition", id:"meal-nutrition", placeholder:"脂質（g)" %>
+        <%= f.text_area :carbo, class:"meals-nutrition", id:"meal-nutrition", placeholder:"炭水化物（g)" %>
       </div>
     </div>
     <%# /商品の詳細 %>
@@ -74,7 +74,7 @@
           <span class="indispensable">必須</span>
         </div>
         <span class="sell-yen">¥</span>
-        <%= f.text_field :hoge, class:"price-input", id:"meal-price", placeholder:"例）300" %>
+        <%= f.text_field :price, class:"price-input", id:"meal-price", placeholder:"例）300" %>
       </div>
     </div>
     <%# /販売価格 %>

@@ -70,15 +70,17 @@ a {
 }
 
 .meal-price {
-  font-size: 1.5vh;
+  font-size: 2vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  margin-top: 1vh;
 }
 
 
 .star-btn {
   display: flex;
   align-items: center;
+  margin-left: 0.5vw;
 }
 
 .star-icon {
@@ -92,3 +94,26 @@ a {
 }
 
 /* //商品一覧 */
+
+.purchase-btn {
+  width: 120px;
+  background-color: deeppink;
+  text-align: center;
+  border-radius: 4%;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 10px;
+}
+
+.purchase-btn-text {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.purchase-btn-icon {
+  width: 60%;
+}

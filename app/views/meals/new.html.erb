@@ -8,7 +8,7 @@
     <%= form_with(model: @meal, local: true) do |f| %>
 
     <%# エラー発生時にメッセージが表示される %>
-    <%#= render 'shared/error_messages', model: f.object %>
+    <%= render 'shared/error_messages', model: f.object %>
     <%# //エラー発生時にメッセージが表示される %>
 
     <%# 料理画像 %>
@@ -31,13 +31,13 @@
         料理名
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :name, class:"meals-text", id:"meal-name", placeholder:"料理名（40文字まで)", maxlength:"40" %>
+      <%= f.text_area :name, class:"meals-text", id:"meal-name", placeholder:"料理名（40文字まで)" %>
       <div class="meals-explain">
         <div class="weight-bold-text">
-          料理の説明
+          料理の概要
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :explanation, class:"meals-text", id:"meal-info", placeholder:"料理の説明（1,000文字まで）" ,rows:"7" ,maxlength:"1000" %>
+        <%= f.text_area :explanation, class:"meals-text", id:"meal-info", placeholder:"料理の説明（1,000文字まで）" ,rows:"7" %>
       </div>
     </div>
     <%# /料理名と説明 %>

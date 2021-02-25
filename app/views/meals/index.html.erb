@@ -4,25 +4,33 @@
   <%# 料理一覧 %>
   <div class='meal-contents'>
     <h2 class='title'>ピックアップ料理</h2>
-    <%= link_to '新規投稿商品', "#", class: "subtitle" %>
+    <%= link_to '新規登録料理', "#", class: "subtitle" %>
     <ul class='meal-lists'>
 
-      <%# 料理のインスタンス変数になにか入っている場合、中身のすべてを展開できるようにしましょう %>
     <% @meals.each do |meal| %>
       <li class='list'>
         <%= link_to "#" do %>
         <div class='meal-img-content'>
-          <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "meal-img" %>
+          <%= image_tag meal.image, class: "meal-img" %>
         </div>
         <div class='meal-info'>
           <h3 class='meal-name'>
-            <%= "商品名" %>
+            <%= meal.name %>
           </h3>
           <h3 class='meal-explanation'>
-            <%= "商品説明" %>
+            <%= meal.explanation %>
+          </h3>
+          <h3 class='meal-nutrition'>
+            P : <%= meal.protein %>
+          </h3>
+          <h3 class='meal-nutrition'>
+            F : <%= meal.fat %>
+          </h3>
+          <h3 class='meal-nutrition'>
+            C : <%= meal.carbo %>
           </h3>
           <div class='meal-price'>
-            <span><%= "販売価格" %>円</span>
+            <span><%= meal.price %>円</span>
             <div class='star-btn'>
               <%= image_tag "star.png", class:"star-icon" %>
               <span class='star-count'>0</span>
@@ -32,7 +40,6 @@
         <% end %>
       </li>
     <% end %>
-      <%# //料理のインスタンス変数になにか入っている場合、中身のすべてを展開できるようにしましょう %>
 
       <%# 料理がない場合、ダミーの料理が表示される %>
     <% if @meals = nil %>

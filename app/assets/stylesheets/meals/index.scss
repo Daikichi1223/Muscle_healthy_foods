@@ -70,15 +70,17 @@ a {
 }
 
 .meal-price {
-  font-size: 1.5vh;
+  font-size: 2vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  margin-top: 1vh;
 }
 
 
 .star-btn {
   display: flex;
   align-items: center;
+  margin-left: 0.5vw;
 }
 
 .star-icon {

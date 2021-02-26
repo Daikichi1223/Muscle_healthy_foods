@@ -1,4 +1,5 @@
 require 'rails_helper'
+
 describe Meal do
   before do
     @meal = FactoryBot.build(:meal)

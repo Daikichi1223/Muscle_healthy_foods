@@ -8,6 +8,7 @@ class CreateMeals < ActiveRecord::Migration[6.0]
       t.integer    :fat,         null: false
       t.integer    :carbo,       null: false
       t.integer    :price,       null: false
+      t.references :shop,        foreign_key: true
       t.timestamps
     end
   end
